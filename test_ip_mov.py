@@ -1,4 +1,4 @@
-import time
+'''import time
 
 import pytest
 from selenium import webdriver
@@ -30,4 +30,4 @@ def test_3(setup):
     driver.find_element_by_xpath("/html/body/div/div/div[2]/form/table/tbody/tr[6]/td[2]/select/option[3]").click()
     time.sleep(1)
     driver.find_element_by_xpath("/html/body/div/div/div[2]/form/table/tbody/tr[7]/td[2]/button").click()
-    time.sleep(2)
+    time.sleep(2)'''
