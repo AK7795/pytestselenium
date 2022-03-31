@@ -1,4 +1,4 @@
-import pytest
+'''import pytest
 import time
 from selenium import webdriver
 from webdriver_manager.chrome import ChromeDriverManager
@@ -21,4 +21,4 @@ def test_1(setUp):
     dr.find_element_by_name("pass").send_keys(i2)
     time.sleep(1)
     dr.find_element_by_name("login").click()
-    time.sleep(6)
+    time.sleep(6)'''

@@ -1,4 +1,4 @@
-import time
+'''import time
 from selenium import webdriver
 from webdriver_manager.chrome import ChromeDriverManager
 i1 = input("enter user email : ")
@@ -15,4 +15,4 @@ time.sleep(1)
 dr.find_element_by_name("login").click()
 time.sleep(10)
 dr.close()
-print("test case completed")
+print("test case completed")'''
