@@ -1,12 +1,13 @@
-import time
+'''import time
 
 import pytest
 from selenium import webdriver
+from selenium.webdriver import ActionChains
 from webdriver_manager.chrome import ChromeDriverManager
 
 @pytest.fixture()
 def setup():
-    global  n1, n2, n3 , n4, n5, n6, n7, driver
+    global  n1, n2, n3 , n4, n5, n6, driver
     n1 = input("enter  name :")
     n2 = input("enter address :")
     n3 = input("enter pincode :")
@@ -27,6 +28,8 @@ def test_3(setup):
     time.sleep(1)
     driver.find_element_by_xpath("/html/body/div/div/div[2]/form/table/tbody/tr[2]/td[2]/input[1]").click()
     time.sleep(1)
+    driver.find_element_by_xpath("/html/body/div/div/div[2]/form/table/tbody/tr[3]/td[2]/select/option[3]").click()
+    time.sleep(1)
     driver.find_element_by_name("Address").send_keys(n2)
     time.sleep(1)
     driver.find_element_by_name("Pincode").send_keys(n3)
@@ -41,5 +44,9 @@ def test_3(setup):
     time.sleep(1)
     driver.find_element_by_name("fcheckbox").click()
     time.sleep(1)
-    driver.find_element_by_name("subbtn").click()
-    time.sleep(5)
+    #driver.find_element_by_name("subbtn").click()
+    #time.sleep(1)
+    ac = ActionChains(driver)
+    ac.context_click(driver.find_element_by_name("Pincode"))
+    ac.perform()
+    time.sleep(4)'''

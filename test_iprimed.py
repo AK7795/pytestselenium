@@ -26,4 +26,5 @@ def test_2(setup):
     driver.find_element_by_xpath("/html/body/div/div/div[2]/form/table/tbody/tr[4]/td[2]/div/input").click()
     time.sleep(1)
     driver.find_element_by_xpath("/html/body/div/div/div[2]/form/table/tbody/tr[5]/td[2]/button").click()
-    time.sleep(3)'''
+    time.sleep(3)
+    '''

@@ -1,6 +1,7 @@
 '''import pytest
 import time
 from selenium import webdriver
+from selenium.webdriver import ActionChains
 from webdriver_manager.chrome import ChromeDriverManager
 
 
@@ -23,4 +24,9 @@ def test_flip1(setUp):
     driver.find_element_by_name("q").send_keys(pr)
     time.sleep(1)
     driver.find_element_by_class_name("L0Z3Pu").click()
+    time.sleep(1)
+    ac = ActionChains(driver)
+    ac.context_click(driver.find_element_by_name("q"))
+    ac.perform()
+    time.sleep(4)
 '''
