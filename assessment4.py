@@ -1,4 +1,4 @@
-def sqroot(a):
+'''def sqroot(a):
     import math
     return math.sqrt(a)
 
@@ -34,3 +34,4 @@ if __name__ == "_main_":
     n1 = int(input("1 : "))
     n2 = int(input("2 : "))
     n3 = int(input("3 : "))
+'''
